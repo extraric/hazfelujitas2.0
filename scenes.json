@@ -56,8 +56,8 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": -10.2,
+                    "yaw": -92.4,
                     "type": "scene",
                     "text": "Előtér",
                     "sceneId": "eloter",
@@ -96,8 +96,8 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": -39,
+                    "yaw": 10.14,
                     "type": "scene",
                     "text": "Előtér",
                     "sceneId": "eloter",
@@ -105,8 +105,8 @@
                     "targetPitch": 2
                 },
 				{
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": -8.12,
+                    "yaw": -13.44,
                     "type": "scene",
                     "text": "Emelet",
                     "sceneId": "emelet",
@@ -114,8 +114,8 @@
                     "targetPitch": 2
                 },
 				{
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": 14.2,
+                    "yaw": 14.48,
                     "type": "scene",
                     "text": "Emeleti szoba 1",
                     "sceneId": "emszoba1",
@@ -123,8 +123,8 @@
                     "targetPitch": 2
                 },
 				{
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": 15.81,
+                    "yaw": -3.23,
                     "type": "scene",
                     "text": "Emeleti szoba 2",
                     "sceneId": "emszoba2",
@@ -163,8 +163,8 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": -7.87,
+                    "yaw": 137.1,
                     "type": "scene",
                     "text": "Emelet",
                     "sceneId": "emelet",
@@ -183,8 +183,8 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": -15.8,
+                    "yaw": 60.6,
                     "type": "scene",
                     "text": "Lépcsőház",
                     "sceneId": "lepcsohaz",
@@ -192,8 +192,8 @@
                     "targetPitch": 2
                 },
 				{
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": -6.8,
+                    "yaw": -24.7,
                     "type": "scene",
                     "text": "Emeleti szoba 1",
                     "sceneId": "emszoba1",
@@ -201,8 +201,8 @@
                     "targetPitch": 2
                 },
 				{
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": 11.3,
+                    "yaw": -97.4,
                     "type": "scene",
                     "text": "Emeleti szoba 2",
                     "sceneId": "emszoba2",
@@ -222,29 +222,29 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -9,
+                    "yaw": -174.3,
                     "type": "scene",
                     "text": "Előtér",
                     "sceneId": "eloter"
                 },
 				{
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -3,
+                    "yaw": -49.8,
                     "type": "scene",
                     "text": "Fürdőszoba",
                     "sceneId": "furdoszoba"
                 },
 				{
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -9.88,
+                    "yaw": 102.88,
                     "type": "scene",
                     "text": "Szoba",
                     "sceneId": "szoba"
                 },
 				{
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -5.3,
+                    "yaw": 15,
                     "type": "scene",
                     "text": "Nappali",
                     "sceneId": "nappali"
@@ -281,15 +281,15 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -6,
+                    "yaw": 167.7,
                     "type": "scene",
                     "text": "Folyosó",
                     "sceneId": "folyoso"
                 },
 				{
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -9.2,
+                    "yaw": 103.63,
                     "type": "scene",
                     "text": "Hálószoba",
                     "sceneId": "haloszoba"
@@ -307,8 +307,8 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -6.8,
+                    "yaw": 174,
                     "type": "scene",
                     "text": "Nappali",
                     "sceneId": "nappali"

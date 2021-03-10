@@ -14,7 +14,6 @@
             "yaw": 117,
             "type": "equirectangular",
             "panorama": "images/360_0031_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -4.7,
@@ -53,7 +52,6 @@
             "yaw": 5,
             "type": "equirectangular",
             "panorama": "images/360_0029_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -10.2,
@@ -73,7 +71,6 @@
             "yaw": 5,
             "type": "equirectangular",
             "panorama": "images/360_0032_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -2.43,
@@ -93,7 +90,6 @@
             "yaw": 5,
             "type": "equirectangular",
             "panorama": "images/360_0033_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -39,
@@ -140,7 +136,6 @@
             "yaw": 5,
             "type": "equirectangular",
             "panorama": "images/360_0035_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -1.5,
@@ -160,7 +155,6 @@
             "yaw": 5,
             "type": "equirectangular",
             "panorama": "images/360_0037_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -7.87,
@@ -180,7 +174,6 @@
             "yaw": 5,
             "type": "equirectangular",
             "panorama": "images/360_0034_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -15.8,
@@ -219,7 +212,6 @@
             "yaw": 117,
             "type": "equirectangular",
             "panorama": "images/360_0040_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -9,
@@ -259,7 +251,6 @@
             "yaw": 117,
             "type": "equirectangular",
             "panorama": "images/360_0039_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -32.1,
@@ -278,7 +269,6 @@
             "yaw": 117,
             "type": "equirectangular",
             "panorama": "images/360_0041_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -6,
@@ -304,7 +294,6 @@
             "yaw": 117,
             "type": "equirectangular",
             "panorama": "images/360_0042_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -6.8,
@@ -323,7 +312,6 @@
             "yaw": 117,
             "type": "equirectangular",
             "panorama": "images/360_0038_Stitch_XHC.jpg",
-			"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -7.1,

@@ -1,16 +1,85 @@
+<!doctype html>
 <html><head>
-  <style>
-      html, body {
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-color: #000;
-      }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+  }
+.content{
+	max-width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+.cam {width:50px;height:50px;position: absolute;background-color: red; 
+    cursor: pointer; background: url("images/camera-360.png")}
+.cam1 {top:14%;left:22%;}
+.cam2 {top:14%;right:27%;}
+.cam3 {top:34%;left:22%;}
+.cam4 {top:40%;left:41%;}
+.cam5 {top:40%;right:26%;}
+.cam6 {top:60%;left:42%;}
+.cam7 {top:65%;left:18%;}
+.cam8 {top:75%;right:23%;}
+.cam9 {bottom:12%;left:41%;}
+.alaprajz {width:100%}
+.paral {
+	background-image: url("images/haz.jpg");
+	min-height: 600px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 88%;
+}
+</style>
+<title>Házfelújítás 2.0</title>
 </head><body>
-  <script src='js/three.min.js'></script>
-  <script src='js/panolens.min.js'></script>
-  <script src='js/main.js'></script>
-</body>
+<div class="mb-5 paral pt-5">
+	<h1 class="display-3 text-white text-center mt-5 pt-5">Házfelújítás 2.0</h1>
+</div>
+<h3 class="text-center">Felmérési állapot</h3>
+<div class="content mt-4">
+<img class="alaprajz" src="images/alaprajz.png">
+
+<div class="cam cam1"></div>
+<div class="cam cam2"></div>
+<div class="cam cam3"></div>
+<div class="cam cam4"></div>
+<div class="cam cam5"></div>
+<div class="cam cam6"></div>
+<div class="cam cam7"></div>
+<div class="cam cam8"></div>
+<div class="cam cam9"></div>
+</div></body>
+<script>
+document.querySelector(".cam1").addEventListener("click", function() {
+  var myWindow = window.open("cam.html?cam=1", "_blank");
+});
+document.querySelector(".cam2").addEventListener("click", function() {
+  var myWindow = window.open("cam.html?cam=2", "_blank");
+});
+document.querySelector(".cam3").addEventListener("click", function() {
+  var myWindow = window.open("cam.html?cam=3", "_blank");
+});
+document.querySelector(".cam4").addEventListener("click", function() {
+  var myWindow = window.open("cam.html?cam=4", "_blank");
+});
+document.querySelector(".cam5").addEventListener("click", function() {
+  var myWindow = window.open("cam.html?cam=5", "_blank");
+});
+document.querySelector(".cam6").addEventListener("click", function() {
+  var myWindow = window.open("cam.html?cam=6", "_blank");
+});
+document.querySelector(".cam7").addEventListener("click", function() {
+  var myWindow = window.open("cam.html?cam=7", "_blank");
+});
+document.querySelector(".cam8").addEventListener("click", function() {
+  var myWindow = window.open("cam.html?cam=8", "_blank");
+});
+document.querySelector(".cam9").addEventListener("click", function() {
+  var myWindow = window.open("cam.html?cam=9", "_blank");
+});
+</script>
 </html>

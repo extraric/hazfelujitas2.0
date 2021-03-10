@@ -143,8 +143,8 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": -1.5,
+                    "yaw": 19.5,
                     "type": "scene",
                     "text": "Emelet",
                     "sceneId": "emelet",
@@ -262,8 +262,8 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -32.1,
+                    "yaw": 172.3,
                     "type": "scene",
                     "text": "Folyosó",
                     "sceneId": "folyoso"
@@ -326,8 +326,8 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -7.1,
+                    "yaw": -174.7,
                     "type": "scene",
                     "text": "Folyosó",
                     "sceneId": "folyoso"

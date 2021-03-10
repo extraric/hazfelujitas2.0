@@ -61,11 +61,11 @@ panorama9.link( panorama10, new THREE.Vector3( 5000.00, -805.59, -1051.92 ));
 panorama9.link( panorama11, new THREE.Vector3( 5000.00, 1120.76, 1303.32 ));
 panorama9.link( panorama12, new THREE.Vector3( 5000.00, 1542.69, -265.72 ));
 
-panorama10.link( panorama9, new THREE.Vector3( 5000.00, -3940.62, 692.72 ));
-panorama10.link( panorama11, new THREE.Vector3( 5000.00, 1120.76, 1303.32 ));
-panorama10.link( panorama12, new THREE.Vector3( 5000.00, 1542.69, -265.72 ));
+panorama10.link( panorama9, new THREE.Vector3( 2894.60, -1531.35, 5000.00 ));
+panorama10.link( panorama11, new THREE.Vector3( 5000.00, -721.48, -1672.37 ));
+panorama10.link( panorama12, new THREE.Vector3( -712.04, 318.88, -5000.00 ));
 
-panorama11.link( panorama10, new THREE.Vector3( 5000.00, 1120.76, 1303.32 ));
+panorama11.link( panorama10, new THREE.Vector3( 5000.00, -316.21, 1361.11 ));
 
-panorama12.link( panorama10, new THREE.Vector3( 5000.00, 1120.76, 1303.32 ));
+panorama12.link( panorama10, new THREE.Vector3( -5000.00, -990.18, 4676.46 ));
 	

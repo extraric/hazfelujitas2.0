@@ -14,15 +14,15 @@ panorama8 = new PANOLENS.ImagePanorama( 'images/360_0032_Stitch_XHC.jpg' );	//ki
 panorama9 = new PANOLENS.ImagePanorama( 'images/360_0033_Stitch_XHC.jpg' );	//lépcsőház
 viewer = new PANOLENS.Viewer({ output: 'console' });
 switch(urlParams.get('cam')){
-	case 1: viewer.add(panorama1); break;
-	case 2: viewer.add(panorama2); break;
-	case 3: viewer.add(panorama3); break;
-	case 4: viewer.add(panorama4); break;
-	case 5: viewer.add(panorama5); break;
-	case 6: viewer.add(panorama6); break;
-	case 7: viewer.add(panorama7); break;
-	case 8: viewer.add(panorama8); break;
-	case 9: viewer.add(panorama9); break;
+	case "1": viewer.add(panorama1); break;
+	case "2": viewer.add(panorama2); break;
+	case "3": viewer.add(panorama3); break;
+	case "4": viewer.add(panorama4); break;
+	case "5": viewer.add(panorama5); break;
+	case "6": viewer.add(panorama6); break;
+	case "7": viewer.add(panorama7); break;
+	case "8": viewer.add(panorama8); break;
+	case "9": viewer.add(panorama9); break;
 }
 viewer.add( panorama6,panorama1,panorama2,panorama3,panorama4,panorama5,panorama7,panorama8,panorama9 );
 

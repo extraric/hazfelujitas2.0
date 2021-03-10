@@ -1,0 +1,338 @@
+{   
+    "default": {
+        "firstScene": "eloter",
+        "author": "Kovács Richárd",
+        "sceneFadeDuration": 1000,
+		"autoLoad": true
+    },
+
+    "scenes": {
+        "eloter": {
+            "title": "Előtér",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "images/360_0031_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Konyha",
+                    "sceneId": "konyha"
+                },
+				{
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Lépcsőház",
+                    "sceneId": "lepcsohaz"
+                },
+				{
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Folyosó",
+                    "sceneId": "folyoso"
+                },
+				{
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Étkező",
+                    "sceneId": "etkezo"
+                }
+            ]
+        },
+
+        "konyha": {
+            "title": "Konyha",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "images/360_0029_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Előtér",
+                    "sceneId": "eloter",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+		
+		"etkezo": {
+            "title": "Étkező",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "images/360_0032_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Előtér",
+                    "sceneId": "eloter",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+		
+		"lepcsohaz": {
+            "title": "Lépcsőház",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "images/360_0033_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Előtér",
+                    "sceneId": "eloter",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+				{
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Emelet",
+                    "sceneId": "emelet",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+				{
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Emeleti szoba 1",
+                    "sceneId": "emszoba1",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+				{
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Emeleti szoba 2",
+                    "sceneId": "emszoba2",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+		
+		"emszoba1": {
+            "title": "Emeleti szoba 1",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "images/360_0035_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Emelet",
+                    "sceneId": "emelet",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+		
+		"emszoba2": {
+            "title": "Emeleti szoba 2",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "images/360_0037_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Emelet",
+                    "sceneId": "emelet",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+		
+		"emelet": {
+            "title": "Emelet",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "images/360_0034_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Lépcsőház",
+                    "sceneId": "lepcsohaz",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+				{
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Emeleti szoba 1",
+                    "sceneId": "emszoba1",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                },
+				{
+                    "pitch": -0.6,
+                    "yaw": 37.1,
+                    "type": "scene",
+                    "text": "Emeleti szoba 2",
+                    "sceneId": "emszoba2",
+                    "targetYaw": -23,
+                    "targetPitch": 2
+                }
+            ]
+        },
+		
+		"folyoso": {
+            "title": "Folyosó",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "images/360_0040_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Előtér",
+                    "sceneId": "eloter"
+                },
+				{
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Fürdőszoba",
+                    "sceneId": "furdoszoba"
+                },
+				{
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Szoba",
+                    "sceneId": "szoba"
+                },
+				{
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Nappali",
+                    "sceneId": "nappali"
+                }
+            ]
+        },
+		
+		"furdoszoba": {
+            "title": "Fürdőszoba",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "images/360_0039_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Folyosó",
+                    "sceneId": "folyoso"
+                }
+            ]
+        },
+		
+		"nappali": {
+            "title": "Nappali",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "images/360_0041_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Folyosó",
+                    "sceneId": "folyoso"
+                },
+				{
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Hálószoba",
+                    "sceneId": "haloszoba"
+                }
+            ]
+        },
+		
+		"haloszoba": {
+            "title": "Hálószoba",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "images/360_0042_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Nappali",
+                    "sceneId": "nappali"
+                }
+            ]
+        },
+		
+		"szoba": {
+            "title": "Szoba",
+            "hfov": 110,
+            "pitch": -3,
+            "yaw": 117,
+            "type": "equirectangular",
+            "panorama": "images/360_0038_Stitch_XHC.jpg",
+			"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -2.1,
+                    "yaw": 132.9,
+                    "type": "scene",
+                    "text": "Folyosó",
+                    "sceneId": "folyoso"
+                }
+            ]
+        },
+    }
+}

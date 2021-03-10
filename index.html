@@ -17,15 +17,15 @@
 	const cam = urlParams.get('cam');
 	console.log(cam);
 	var panorama1, panorama2, panorama3, panorama4, panorama5, panorama6, panorama7, panorama8, panorama9, viewer;
-    panorama1 = new PANOLENS.ImagePanorama( 'images/360_0041_Stitch_XHC.JPG' );	//nappali
-    panorama2 = new PANOLENS.ImagePanorama( 'images/360_0042_Stitch_XHC.JPG' );	//hálószoba
-    panorama3 = new PANOLENS.ImagePanorama( 'images/360_0039_Stitch_XHC.JPG' );	//fürdőszoba
-    panorama4 = new PANOLENS.ImagePanorama( 'images/360_0040_Stitch_XHC.JPG' );	//előszoba
-    panorama5 = new PANOLENS.ImagePanorama( 'images/360_0038_Stitch_XHC.JPG' );	//szoba
-    panorama6 = new PANOLENS.ImagePanorama( 'images/360_0031_Stitch_XHC.JPG' );	//előtér
-    panorama7 = new PANOLENS.ImagePanorama( 'images/360_0029_Stitch_XHC.JPG' );	//konyha
-    panorama8 = new PANOLENS.ImagePanorama( 'images/360_0032_Stitch_XHC.JPG' );	//kisszoba
-    panorama9 = new PANOLENS.ImagePanorama( 'images/360_0033_Stitch_XHC.JPG' );	//lépcsőház
+    panorama1 = new PANOLENS.ImagePanorama( 'images/360_0041_Stitch_XHC.jpg' );	//nappali
+    panorama2 = new PANOLENS.ImagePanorama( 'images/360_0042_Stitch_XHC.jpg' );	//hálószoba
+    panorama3 = new PANOLENS.ImagePanorama( 'images/360_0039_Stitch_XHC.jpg' );	//fürdőszoba
+    panorama4 = new PANOLENS.ImagePanorama( 'images/360_0040_Stitch_XHC.jpg' );	//előszoba
+    panorama5 = new PANOLENS.ImagePanorama( 'images/360_0038_Stitch_XHC.jpg' );	//szoba
+    panorama6 = new PANOLENS.ImagePanorama( 'images/360_0031_Stitch_XHC.jpg' );	//előtér
+    panorama7 = new PANOLENS.ImagePanorama( 'images/360_0029_Stitch_XHC.jpg' );	//konyha
+    panorama8 = new PANOLENS.ImagePanorama( 'images/360_0032_Stitch_XHC.jpg' );	//kisszoba
+    panorama9 = new PANOLENS.ImagePanorama( 'images/360_0033_Stitch_XHC.jpg' );	//lépcsőház
     viewer = new PANOLENS.Viewer({ output: 'console' });
 	switch(urlParams.get('cam')){
 		case 1: viewer.add(panorama1); break;

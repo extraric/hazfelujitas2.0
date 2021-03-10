@@ -17,29 +17,29 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -4.7,
+                    "yaw": 31.5,
                     "type": "scene",
                     "text": "Konyha",
                     "sceneId": "konyha"
                 },
 				{
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": 8.6,
+                    "yaw": -18.4,
                     "type": "scene",
                     "text": "Lépcsőház",
                     "sceneId": "lepcsohaz"
                 },
 				{
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -5.8,
+                    "yaw": 145.5,
                     "type": "scene",
                     "text": "Folyosó",
                     "sceneId": "folyoso"
                 },
 				{
-                    "pitch": -2.1,
-                    "yaw": 132.9,
+                    "pitch": -3.4,
+                    "yaw": -72,
                     "type": "scene",
                     "text": "Étkező",
                     "sceneId": "etkezo"
@@ -76,8 +76,8 @@
 			"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
+                    "pitch": -2.43,
+                    "yaw": 4,
                     "type": "scene",
                     "text": "Előtér",
                     "sceneId": "eloter",

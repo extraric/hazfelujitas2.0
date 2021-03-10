@@ -6,10 +6,11 @@
     <title>Tour</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-	<script type="text/javascript" src="scenes.json"></script>
     <style>
     #panorama {
 		position: absolute;
+		top: 0;
+		left: 0;
 		height: 100%;
 		width: 100%;
     }
@@ -29,25 +30,40 @@
 
 <div id="panorama"></div>
 <script>
-var myscenes = JSON.parse(scenes);
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const cam = urlParams.get('cam');
-switch(urlParams.get('cam')){
-	case "1": myscenes.default.firstScene="nappali"; break;
-	case "2": myscenes.default.firstScene="haloszoba"; break;
-	case "3": myscenes.default.firstScene="furdoszoba"; break;
-	case "4": myscenes.default.firstScene="folyoso"; break;
-	case "5": myscenes.default.firstScene="szoba"; break;
-	case "6": myscenes.default.firstScene="eloter"; break;
-	case "7": myscenes.default.firstScene="konyha"; break;
-	case "8": myscenes.default.firstScene="etkezo"; break;
-	case "9": myscenes.default.firstScene="lepcsohaz"; break;
-	case "10": myscenes.default.firstScene="emelet"; break;
-	case "11": myscenes.default.firstScene="emszoba1"; break;
-	case "12": myscenes.default.firstScene="emszoba2"; break;
+function loadJSON(url, callback) {  
+    var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+    xobj.open('GET', url, true);
+    xobj.onreadystatechange = function () {
+          if (xobj.readyState == 4 && xobj.status == "200") {
+            callback(xobj.responseText);
+          }
+    };
+    xobj.send(null);  
 }
-pannellum.viewer('panorama', myscenes);
+
+loadJSON("scenes.json", function(response) {
+  // Parse JSON string into object
+    var myscenes = JSON.parse(response);
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+	const cam = urlParams.get('cam');
+	switch(urlParams.get('cam')){
+		case "1": myscenes.default.firstScene="nappali"; break;
+		case "2": myscenes.default.firstScene="haloszoba"; break;
+		case "3": myscenes.default.firstScene="furdoszoba"; break;
+		case "4": myscenes.default.firstScene="folyoso"; break;
+		case "5": myscenes.default.firstScene="szoba"; break;
+		case "6": myscenes.default.firstScene="eloter"; break;
+		case "7": myscenes.default.firstScene="konyha"; break;
+		case "8": myscenes.default.firstScene="etkezo"; break;
+		case "9": myscenes.default.firstScene="lepcsohaz"; break;
+		case "10": myscenes.default.firstScene="emelet"; break;
+		case "11": myscenes.default.firstScene="emszoba1"; break;
+		case "12": myscenes.default.firstScene="emszoba2"; break;
+	}
+	pannellum.viewer('panorama', myscenes);
+});
 </script>
 
 </body>

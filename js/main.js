@@ -15,7 +15,7 @@ panorama9 = new PANOLENS.ImagePanorama( 'images/360_0033_Stitch_XHC.jpg' );	//l�
 panorama10 = new PANOLENS.ImagePanorama( 'images/360_0034_Stitch_XHC.jpg' );	//lépcsőház fent
 panorama11 = new PANOLENS.ImagePanorama( 'images/360_0035_Stitch_XHC.jpg' );	//emeleti szoba
 panorama12 = new PANOLENS.ImagePanorama( 'images/360_0037_Stitch_XHC.jpg' );	//emeleki gy szoba
-viewer = new PANOLENS.Viewer({ output: 'console' });
+viewer = new PANOLENS.Viewer({ output: 'console',autoHideInfospot: false });
 switch(urlParams.get('cam')){
 	case "1": viewer.add(panorama1); break;
 	case "2": viewer.add(panorama2); break;
@@ -32,40 +32,40 @@ switch(urlParams.get('cam')){
 }
 viewer.add( panorama6,panorama1,panorama2,panorama3,panorama4,panorama5,panorama7,panorama8,panorama9,panorama10,panorama11,panorama12 );
 
-panorama1.link( panorama2, new THREE.Vector3( -1091.24, -822.89, 5000.00 ));
-panorama1.link( panorama4, new THREE.Vector3( -5000.00, -566.15, 1080.05 ));
+panorama1.link( panorama2, new THREE.Vector3( -1091.24, -822.89, 5000.00 ),400);
+panorama1.link( panorama4, new THREE.Vector3( -5000.00, -566.15, 1080.05 ),400);
 
-panorama2.link( panorama1, new THREE.Vector3( -5000.00, -431.78, 676.02 ));
+panorama2.link( panorama1, new THREE.Vector3( -5000.00, -431.78, 676.02 ),400);
 
-panorama4.link( panorama1, new THREE.Vector3( 5000.00, -117.38, 1452.50 ));
-panorama4.link( panorama3, new THREE.Vector3( 3915.68, -582.92, -5000.00 ));
-panorama4.link( panorama5, new THREE.Vector3( -773.69, -1008.60, 5000.00 ));
-panorama4.link( panorama6, new THREE.Vector3( -5000.00, -956.37, -454.42 ));
+panorama4.link( panorama1, new THREE.Vector3( 5000.00, -117.38, 1452.50 ),400);
+panorama4.link( panorama3, new THREE.Vector3( 3915.68, -582.92, -5000.00 ),400);
+panorama4.link( panorama5, new THREE.Vector3( -773.69, -1008.60, 5000.00 ),400);
+panorama4.link( panorama6, new THREE.Vector3( -5000.00, -956.37, -454.42 ),400);
 
-panorama3.link( panorama4, new THREE.Vector3( -5000.00, -702.79, 708.70 ));
+panorama3.link( panorama4, new THREE.Vector3( -5000.00, -702.79, 708.70 ),400);
 
-panorama5.link( panorama4, new THREE.Vector3( -5000.00, -942.63, -364.44 ));
+panorama5.link( panorama4, new THREE.Vector3( -5000.00, -942.63, -364.44 ),400);
 
-panorama6.link( panorama9, new THREE.Vector3( 5000.00, 1699.45, -940.30 ));
-panorama6.link( panorama7, new THREE.Vector3( 5000.00, -705.13, 3160.58 ));
-panorama6.link( panorama4, new THREE.Vector3( -5000.00, -513.70, 3566.34 ));
-panorama6.link( panorama8, new THREE.Vector3( 1713.39, -348.63, -5000.00 ));
+panorama6.link( panorama9, new THREE.Vector3( 5000.00, 1699.45, -940.30 ),400);
+panorama6.link( panorama7, new THREE.Vector3( 5000.00, -705.13, 3160.58 ),400);
+panorama6.link( panorama4, new THREE.Vector3( -5000.00, -513.70, 3566.34 ),400);
+panorama6.link( panorama8, new THREE.Vector3( 1713.39, -348.63, -5000.00 ),400);
 
-panorama7.link( panorama6, new THREE.Vector3( -1020.32, -818.63, -5000.00 ));
-panorama7.link( panorama9, new THREE.Vector3( 2801.82, 1579.60, -5000.00 ));
+panorama7.link( panorama6, new THREE.Vector3( -1020.32, -818.63, -5000.00 ),400);
+panorama7.link( panorama9, new THREE.Vector3( 2801.82, 1579.60, -5000.00 ),400);
 
-panorama8.link( panorama6, new THREE.Vector3( 5000.00, -38.70, 839.03 ));
+panorama8.link( panorama6, new THREE.Vector3( 5000.00, -38.70, 839.03 ),400);
 
-panorama9.link( panorama6, new THREE.Vector3( 5000.00, -3940.62, 692.72 ));
-panorama9.link( panorama10, new THREE.Vector3( 5000.00, -805.59, -1051.92 ));
-panorama9.link( panorama11, new THREE.Vector3( 5000.00, 1120.76, 1303.32 ));
-panorama9.link( panorama12, new THREE.Vector3( 5000.00, 1542.69, -265.72 ));
+panorama9.link( panorama6, new THREE.Vector3( 5000.00, -3940.62, 692.72 ),400);
+panorama9.link( panorama10, new THREE.Vector3( 5000.00, -805.59, -1051.92 ),400);
+panorama9.link( panorama11, new THREE.Vector3( 5000.00, 1120.76, 1303.32 ),400);
+panorama9.link( panorama12, new THREE.Vector3( 5000.00, 1542.69, -265.72 ),400);
 
-panorama10.link( panorama9, new THREE.Vector3( 2894.60, -1531.35, 5000.00 ));
-panorama10.link( panorama11, new THREE.Vector3( 5000.00, -721.48, -1672.37 ));
-panorama10.link( panorama12, new THREE.Vector3( -712.04, 318.88, -5000.00 ));
+panorama10.link( panorama9, new THREE.Vector3( 2894.60, -1531.35, 5000.00 ),400);
+panorama10.link( panorama11, new THREE.Vector3( 5000.00, -721.48, -1672.37 ),400);
+panorama10.link( panorama12, new THREE.Vector3( -712.04, 318.88, -5000.00 ),400);
 
-panorama11.link( panorama10, new THREE.Vector3( 5000.00, -316.21, 1361.11 ));
+panorama11.link( panorama10, new THREE.Vector3( 5000.00, -316.21, 1361.11 ),400);
 
-panorama12.link( panorama10, new THREE.Vector3( -5000.00, -990.18, 4676.46 ));
+panorama12.link( panorama10, new THREE.Vector3( -5000.00, -990.18, 4676.46 ),400);
 	

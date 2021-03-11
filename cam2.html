@@ -24,11 +24,49 @@
 	.pnlm-hotspot.pnlm-scene {
 		background-position: 0px 120px;
 	}
+	#minimap {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		z-index: 2;
+		background: url("images/alaprajz_kicsi.png");
+		width: 200px;
+		height: 265px;
+		border-radius: 5px;
+	}
+	.cam {
+		position: absolute;
+		cursor: pointer;
+	}
+	.cam:after{
+		content: "\25C9";
+	}
+	.cam1 {top:14%;left:22%;}
+	.cam2 {top:14%;right:27%;}
+	.cam3 {top:34%;left:22%;}
+	.cam4 {top:40%;left:41%;}
+	.cam5 {top:40%;right:26%;}
+	.cam6 {top:60%;left:42%;}
+	.cam7 {top:65%;left:18%;}
+	.cam8 {top:75%;right:23%;}
+	.cam9 {bottom:12%;left:41%;}
     </style>
 </head>
 <body>
 
-<div id="panorama"></div>
+<div id="panorama">
+	<div id="minimap">
+        <div class="cam cam1"></div>
+        <div class="cam cam2"></div>
+        <div class="cam cam3"></div>
+        <div class="cam cam4"></div>
+        <div class="cam cam5"></div>
+        <div class="cam cam6"></div>
+        <div class="cam cam7"></div>
+        <div class="cam cam8"></div>
+        <div class="cam cam9"></div>
+    </div>
+</div>
 <script>
 function loadJSON(url, callback) {  
     var xobj = new XMLHttpRequest();
@@ -62,7 +100,38 @@ loadJSON("scenes.json", function(response) {
 		case "11": myscenes.default.firstScene="emszoba1"; break;
 		case "12": myscenes.default.firstScene="emszoba2"; break;
 	}
-	pannellum.viewer('panorama', myscenes);
+	var viewer = pannellum.viewer('panorama', myscenes);
+	document.querySelectorAll('.cam').forEach(function(item){
+	  item.addEventListener('click', function(event){
+		if (event.target.classList.contains('cam1')){
+			viewer.loadScene('nappali');
+		}
+		if (event.target.classList.contains('cam2')){
+			viewer.loadScene('haloszoba');
+		}
+		if (event.target.classList.contains('cam3')){
+			viewer.loadScene('furdoszoba');
+		}
+		if (event.target.classList.contains('cam4')){
+			viewer.loadScene('folyoso');
+		}
+		if (event.target.classList.contains('cam5')){
+			viewer.loadScene('szoba');
+		}
+		if (event.target.classList.contains('cam6')){
+			viewer.loadScene('eloter');
+		}
+		if (event.target.classList.contains('cam7')){
+			viewer.loadScene('konyha');
+		}
+		if (event.target.classList.contains('cam8')){
+			viewer.loadScene('etkezo');
+		}
+		if (event.target.classList.contains('cam9')){
+			viewer.loadScene('lepcsohaz');
+		}
+	  });
+	});
 });
 </script>
 

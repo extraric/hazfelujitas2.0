@@ -4,58 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtuális háztúra</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-    <style>
-    #panorama {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-    }
-	.pnlm-hotspot {
-		height: 40px;
-		width: 40px;
-		background-size: cover;
-		border-radius: 23px;
-		border: 3px solid #71ceec;
-	}
-	.pnlm-hotspot.pnlm-scene {
-		background-position: 0px 120px;
-	}
-	#minimap {
-		position: absolute;
-		top: 5px;
-		right: 5px;
-		z-index: 2;
-		max-width: 200px;
-		max-height: 247px;
-		background: url("images/alaprajz_kicsi.png");
-		background-size: contain;
-		width: 20vw;
-		height: 25vw;
-		border-radius: 5px;
-		background-color: #ffffff6e;
-	}
-	.cam {
-		position: absolute;
-		cursor: pointer;
-		color: #ed143d;
-	}
-	.cam:after{
-		content: "\25C9";
-	}
-	.cam1 {top:14%;left:22%;}
-	.cam2 {top:14%;right:27%;}
-	.cam3 {top:36%;left:22%;}
-	.cam4 {top:43%;left:41%;}
-	.cam5 {top:43%;right:26%;}
-	.cam6 {top:63%;left:42%;}
-	.cam7 {top:73%;left:18%;}
-	.cam8 {top:80%;right:26%;}
-	.cam9 {bottom:4%;left:41%;}
-    </style>
+    <link rel="stylesheet" href="/css/pannellum.css"/>
+    <script type="text/javascript" src="/js/pannellum.js"></script>
+    <link rel="stylesheet" href="/css/cam.css">
 </head>
 <body>
 
@@ -71,8 +22,23 @@
         <div class="cam cam8"></div>
         <div class="cam cam9"></div>
     </div>
+	<div id="fszhistory">
+		<span id="close" onclick="this.parentNode.style.display='none'; return false;">x</span>
+        <div class="fsz-hotspot fsz1"></div>
+        <div class="fsz-hotspot fsz2"></div>
+        <div class="fsz-hotspot fsz3"></div>
+        <div class="fsz-hotspot fsz4"></div>
+        <div class="fsz-hotspot fsz5"></div>
+        <div class="fsz-hotspot fsz6"></div>
+        <div class="fsz-hotspot fsz7"></div>
+        <div class="fsz-hotspot fsz8"></div>
+        <div class="fsz-hotspot fsz9"></div>
+        <div class="fsz-hotspot fsz10"></div>
+    </div>
 </div>
-<script>
+
+<script>	
+var hs = document.getElementById('fszhistory');
 function loadJSON(url, callback) {  
     var xobj = new XMLHttpRequest();
         xobj.overrideMimeType("application/json");
@@ -83,6 +49,9 @@ function loadJSON(url, callback) {
           }
     };
     xobj.send(null);  
+}
+function fszhistory(hotSpotDiv, args){
+	hs.style.display = "flex";
 }
 
 loadJSON("scenes.json", function(response) {
@@ -108,6 +77,7 @@ loadJSON("scenes.json", function(response) {
 	var viewer = pannellum.viewer('panorama', myscenes);
 	document.querySelectorAll('.cam').forEach(function(item){
 	  item.addEventListener('click', function(event){
+		hs.style.display='none';
 		if (event.target.classList.contains('cam1')){
 			viewer.loadScene('nappali');
 		}
@@ -134,6 +104,40 @@ loadJSON("scenes.json", function(response) {
 		}
 		if (event.target.classList.contains('cam9')){
 			viewer.loadScene('lepcsohaz');
+		}
+	  });
+	});
+	document.querySelectorAll('.fsz-hotspot').forEach(function(item){
+	  item.addEventListener('click', function(event){
+		if (event.target.classList.contains('fsz1')){
+			viewer.loadScene('fsz1');
+		}
+		if (event.target.classList.contains('fsz2')){
+			viewer.loadScene('fsz2');
+		}
+		if (event.target.classList.contains('fsz3')){
+			viewer.loadScene('fsz3');
+		}
+		if (event.target.classList.contains('fsz4')){
+			viewer.loadScene('fsz4');
+		}
+		if (event.target.classList.contains('fsz5')){
+			viewer.loadScene('fsz5');
+		}
+		if (event.target.classList.contains('fsz6')){
+			viewer.loadScene('fsz6');
+		}
+		if (event.target.classList.contains('fsz7')){
+			viewer.loadScene('fsz7');
+		}
+		if (event.target.classList.contains('fsz8')){
+			viewer.loadScene('fsz8');
+		}
+		if (event.target.classList.contains('fsz9')){
+			viewer.loadScene('fsz9');
+		}
+		if (event.target.classList.contains('fsz10')){
+			viewer.loadScene('fsz10');
 		}
 	  });
 	});

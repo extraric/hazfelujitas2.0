@@ -1,0 +1,124 @@
+.fsz-hotspot {
+    height: 120px;
+    width: 200px;
+    background: url("/images/thumb_80.jpg") center;
+    background-size: cover;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.fsz0{
+    height: 60px;
+    width: 100px;
+    transition: width .5s, height .5s;
+}
+.fsz0:hover{
+    height: 120px;
+    width: 200px;
+}
+.fsz1{
+    background: url("/images/thumb_57.jpg");
+}
+.fsz2{
+    background-image: url("/images/thumb_58.jpg");
+}
+.fsz3{
+    background-image: url("/images/thumb_59.jpg");
+}
+.fsz4{
+    background-image: url("/images/thumb_60.jpg");
+}
+.fsz5{
+    background-image: url("/images/thumb_62.jpg");
+}
+.fsz6{
+    background-image: url("/images/thumb_63.jpg");
+}
+.fsz7{
+    background-image: url("/images/thumb_64.jpg");
+}
+.fsz8{
+    background-image: url("/images/thumb_70.jpg");
+}
+.fsz9{
+    background-image: url("/images/thumb_72.jpg");
+}
+.fsz10{
+    background: url("/images/thumb_80.jpg") bottom;
+}
+#fszhistory{
+    display: none;
+    position: absolute;
+    box-shadow: 7px 6px 14px 0px;
+    bottom: 5px;
+    left: 50%;
+    width: 80%;
+    max-width: 1100px;
+    max-height: 80%;
+    overflow-y: auto;
+    translate: -50%;
+    background: azure;
+    z-index: 2;
+    border: 1px solid #222;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    padding: 10px 20px 5px 10px;
+    justify-content: space-around;
+    align-content: start;
+    gap: 20px;
+}
+span#close {
+    top: 0;
+    right: 0px;
+    position: absolute;
+    padding: 6px;
+    background: #ccc;
+    cursor: pointer;
+}
+#panorama {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.pnlm-hotspot {
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    border-radius: 23px;
+    border: 3px solid #71ceec;
+}
+.pnlm-hotspot.pnlm-scene {
+    background-position: 0px 120px;
+}
+#minimap {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+    max-width: 200px;
+    max-height: 247px;
+    background: url("/images/alaprajz_kicsi.png");
+    background-size: contain;
+    width: 20vw;
+    height: 25vw;
+    border-radius: 5px;
+    background-color: #ffffff6e;
+}
+.cam {
+    position: absolute;
+    cursor: pointer;
+    color: #ed143d;
+}
+.cam:after{
+    content: "\25C9";
+}
+.cam1 {top:14%;left:22%;}
+.cam2 {top:14%;right:27%;}
+.cam3 {top:36%;left:22%;}
+.cam4 {top:43%;left:41%;}
+.cam5 {top:43%;right:26%;}
+.cam6 {top:63%;left:42%;}
+.cam7 {top:73%;left:18%;}
+.cam8 {top:80%;right:26%;}
+.cam9 {bottom:4%;left:41%;}

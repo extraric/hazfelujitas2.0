@@ -246,11 +246,12 @@
 		
 		"furdoszoba": {
             "title": "Fürdőszoba",
-            "hfov": 110,
-            "pitch": -3,
-            "yaw": 117,
+            "hfov": 120,
+            "pitch": -8,
+            "yaw": 339,
             "type": "equirectangular",
             "panorama": "images/360_0039_Stitch_XHC.jpg",
+            "hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -32.1,
@@ -258,6 +259,205 @@
                     "type": "scene",
                     "text": "Folyosó",
                     "sceneId": "folyoso"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": 244,
+                    "cssClass": "fsz-hotspot fsz0",
+                    "type": "info",
+                    "clickHandlerFunc": "fszhistory",
+                    "clickHandlerArgs": "",
+                    "text": "Felújítás"
+                }
+            ]
+        },
+        "fsz1": {
+            "title": "Fürdőszoba",
+            "hfov": 120,
+            "pitch": 14.7,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "images/rolled_57.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "cssClass": "fsz-hotspot fsz0",
+                    "type": "info",
+                    "clickHandlerFunc": "fszhistory",
+                    "clickHandlerArgs": "",
+                    "text": "Felújítás"
+                }
+            ]
+        },
+        "fsz2": {
+            "title": "Fürdőszoba",
+            "hfov": 120,
+            "pitch": 14.7,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "images/rolled_58.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "cssClass": "fsz-hotspot fsz0",
+                    "type": "info",
+                    "clickHandlerFunc": "fszhistory",
+                    "clickHandlerArgs": "",
+                    "text": "Felújítás"
+                }
+            ]
+        },
+        "fsz3": {
+            "title": "Fürdőszoba",
+            "hfov": 120,
+            "pitch": 14.7,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "images/rolled_59.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "cssClass": "fsz-hotspot fsz0",
+                    "type": "info",
+                    "clickHandlerFunc": "fszhistory",
+                    "clickHandlerArgs": "",
+                    "text": "Felújítás"
+                }
+            ]
+        },
+        "fsz4": {
+            "title": "Fürdőszoba",
+            "hfov": 120,
+            "pitch": 14.7,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "images/rolled_60.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "cssClass": "fsz-hotspot fsz0",
+                    "type": "info",
+                    "clickHandlerFunc": "fszhistory",
+                    "clickHandlerArgs": "",
+                    "text": "Felújítás"
+                }
+            ]
+        },
+        "fsz5": {
+            "title": "Fürdőszoba",
+            "hfov": 120,
+            "pitch": 14.7,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "images/rolled_62.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "cssClass": "fsz-hotspot fsz0",
+                    "type": "info",
+                    "clickHandlerFunc": "fszhistory",
+                    "clickHandlerArgs": "",
+                    "text": "Felújítás"
+                }
+            ]
+        },
+        "fsz6": {
+            "title": "Fürdőszoba",
+            "hfov": 120,
+            "pitch": 14.7,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "images/rolled_63.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "cssClass": "fsz-hotspot fsz0",
+                    "type": "info",
+                    "clickHandlerFunc": "fszhistory",
+                    "clickHandlerArgs": "",
+                    "text": "Felújítás"
+                }
+            ]
+        },
+        "fsz7": {
+            "title": "Fürdőszoba",
+            "hfov": 120,
+            "pitch": 14.7,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "images/rolled_64.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "cssClass": "fsz-hotspot fsz0",
+                    "type": "info",
+                    "clickHandlerFunc": "fszhistory",
+                    "clickHandlerArgs": "",
+                    "text": "Felújítás"
+                }
+            ]
+        },
+        "fsz8": {
+            "title": "Fürdőszoba",
+            "hfov": 120,
+            "pitch": 14.7,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "images/rolled_70.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "cssClass": "fsz-hotspot fsz0",
+                    "type": "info",
+                    "clickHandlerFunc": "fszhistory",
+                    "clickHandlerArgs": "",
+                    "text": "Felújítás"
+                }
+            ]
+        },
+        "fsz9": {
+            "title": "Fürdőszoba",
+            "hfov": 120,
+            "pitch": 14.7,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "images/rolled_72.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "cssClass": "fsz-hotspot fsz0",
+                    "type": "info",
+                    "clickHandlerFunc": "fszhistory",
+                    "clickHandlerArgs": "",
+                    "text": "Felújítás"
+                }
+            ]
+        },
+        "fsz10": {
+            "title": "Fürdőszoba",
+            "hfov": 120,
+            "pitch": 14.7,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "images/rolled_80.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 0,
+                    "cssClass": "fsz-hotspot fsz0",
+                    "type": "info",
+                    "clickHandlerFunc": "fszhistory",
+                    "clickHandlerArgs": "",
+                    "text": "Felújítás"
                 }
             ]
         },
